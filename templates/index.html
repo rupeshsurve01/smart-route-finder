@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Smart Route Finder</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+<link
+rel="stylesheet"
+href="https://unpkg.com/leaflet/dist/leaflet.css"
+/>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚗 Smart Route Finder</h1>
+
+<select id="start">
+<option>Pune</option>
+<option>Mumbai</option>
+<option>Nashik</option>
+<option>Aurangabad</option>
+<option>Satara</option>
+</select>
+
+<select id="end">
+<option>Mumbai</option>
+<option>Pune</option>
+<option>Nashik</option>
+<option>Aurangabad</option>
+<option>Satara</option>
+</select>
+
+<select id="mode">
+<option value="car">Car</option>
+<option value="bike">Bike</option>
+<option value="walk">Walking</option>
+</select>
+
+<button onclick="findRoute()">Find Route</button>
+
+<div id="result"></div>
+
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
