@@ -1,9 +1,9 @@
+# 🚗 Smart Route Finder
+
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Flask](https://img.shields.io/badge/Flask-Web%20Framework-green)
 ![Algorithm](https://img.shields.io/badge/Algorithm-Dijkstra-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-
-# 🚗 Smart Route Finder
 
 A web-based **Smart Route Finder** that calculates the shortest route between cities using the **Dijkstra Algorithm** and visualizes it on an interactive map.
 
@@ -111,11 +111,11 @@ http://127.0.0.1:5000
 
 ### Route Finder Interface
 
-<img src="screenshots/home.png" width="700">
+<img src="screenshots/map.png" width="700">
 
 ### Route Visualization on Map
 
-<img src="screenshots/map.png" width="700">
+<img src="screenshots/home.png" width="700">
 
 ---
 
