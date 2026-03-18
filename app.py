@@ -4,7 +4,7 @@ import random
 
 app = Flask(__name__)
 
-# Graph distances (km)
+
 graph = {
     "Pune": {"Mumbai": 150, "Nashik": 90, "Satara": 110},
     "Mumbai": {"Pune": 150, "Nashik": 170},
@@ -13,7 +13,7 @@ graph = {
     "Satara": {"Pune": 110}
 }
 
-# City coordinates (for map)
+
 coordinates = {
     "Pune": [18.5204, 73.8567],
     "Mumbai": [19.0760, 72.8777],

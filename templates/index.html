@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
 <title>Smart Route Finder</title>
 
 <link rel="stylesheet" href="/static/style.css">
@@ -16,10 +15,13 @@ href="https://unpkg.com/leaflet/dist/leaflet.css"
 
 <body>
 
-<div class="container">
+<div class="sidebar">
 
 <h1>🚗 Smart Route Finder</h1>
 
+<div class="input-group">
+
+<label>Start Location</label>
 <select id="start">
 <option>Pune</option>
 <option>Mumbai</option>
@@ -28,6 +30,7 @@ href="https://unpkg.com/leaflet/dist/leaflet.css"
 <option>Satara</option>
 </select>
 
+<label>Destination</label>
 <select id="end">
 <option>Mumbai</option>
 <option>Pune</option>
@@ -36,13 +39,18 @@ href="https://unpkg.com/leaflet/dist/leaflet.css"
 <option>Satara</option>
 </select>
 
+<label>Travel Mode</label>
 <select id="mode">
-<option value="car">Car</option>
-<option value="bike">Bike</option>
-<option value="walk">Walking</option>
+<option value="car">🚗 Car</option>
+<option value="bike">🏍 Bike</option>
+<option value="walk">🚶 Walking</option>
 </select>
 
-<button onclick="findRoute()">Find Route</button>
+<button onclick="findRoute()">Find Best Route</button>
+
+</div>
+
+<div id="loader"></div>
 
 <div id="result"></div>
 
@@ -51,7 +59,6 @@ href="https://unpkg.com/leaflet/dist/leaflet.css"
 <div id="map"></div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
 <script src="/static/script.js"></script>
 
 </body>
